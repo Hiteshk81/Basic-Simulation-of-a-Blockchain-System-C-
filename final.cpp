@@ -714,7 +714,7 @@ int main(){
 				printf("Here is the local copy of blockchain after manupilation but before the checking");
 				print_BC(root1);
 				}
-	       else if(n1==u2){
+	       	else if(n1==u2){
 			    update(root2,bp);
 				printf("Here is the local copy of blockchain after manupilation but before the checking");
 				print_BC(root2);
@@ -729,14 +729,14 @@ int main(){
 				printf("Here is the local copy of blockchain after manupilation but before the checking");
 				print_BC(root4);
 				}
-			 else cout<<"Enter a valid username";
+			else cout<<"Enter a valid username";
             // now we updated the local copy as per hackers demand
             // we have to check this with rest of the local copies to get the majority
             // for the sake of checking we will check the last block of each local chain
 
             //printf("HI_THERE\n");
            int ctr1,ctr2,ctr3,ctr4;
-			  ctr1 = check(root1,root2,root3,root4);
+			 ctr1 = check(root1,root2,root3,root4);
 			 ctr2 = check(root2,root1,root3,root4);
 			 ctr3 = check(root3,root2,root1,root4);
              ctr4 = check(root4,root2,root1,root3);
